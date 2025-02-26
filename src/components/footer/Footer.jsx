@@ -1,27 +1,26 @@
 // import React from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import SparklesCore from "../../ui/Sparkles";
-import "./footer.css";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import SparklesCore from "../../ui/Sparkles"
+import "./footer.css"
 
 const SocialIcons = () => {
   const handleLinkedInClick = () => {
-    window.location.href =
-      "https://www.linkedin.com/in/vaibhavnagargoje/";
-  };
+    window.location.href = "https://www.linkedin.com/in/vaibhavnagargoje/"
+  }
 
   const handleGithubClick = () => {
-    window.location.href = "https://github.com/mrvaibhavnagargoje";
-  };
+    window.location.href = "https://github.com/mrvaibhavnagargoje"
+  }
 
   const handleInstagramClick = () => {
-    window.location.href = "https://www.instagram.com/mr.vaibhavnagargoje/";
-  };
+    window.location.href = "https://www.instagram.com/mr.vaibhavnagargoje/"
+  }
 
   return (
     <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:font-[cursive] font-['Times_New_Roman']">
       <div className="text-white text-center">
         <h1 className="text-3xl ">👋</h1>
-        <h1 className="text-3xl font-extrabold py-2">
+        <h1 className="md:text-3xl text-2xl font-extrabold py-2">
           Thanks for checking my website!
         </h1>
         {/* <p className='text-2xl font-extrabold'>get in touch (Click to copy)</p> */}
@@ -62,7 +61,7 @@ const SocialIcons = () => {
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SocialIcons;
+export default SocialIcons
