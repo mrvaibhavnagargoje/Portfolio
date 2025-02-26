@@ -77,7 +77,7 @@ const ProfileSection = () => {
   return (
     <section
       id="profile"
-      className="md:font-[cursive] font-['Times_New_Roman'] mt-[71px] sm:mt-20 md:mt-10 lg:mt-[-55px]"
+      className="md:font-[cursive] font-['Times_New_Roman'] mt-[40px] sm:mt-20 md:mt-10 lg:mt-[-55px]"
     >
       <div className="section__pic-container">
         <img
