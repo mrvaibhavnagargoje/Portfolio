@@ -18,7 +18,7 @@ const SocialIcons = () => {
   };
 
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md md:font-[cursive] font-['Times_New_Roman']">
       <div className="text-white text-center">
         <h1 className="text-3xl ">👋</h1>
         <h1 className="text-3xl font-extrabold py-2">

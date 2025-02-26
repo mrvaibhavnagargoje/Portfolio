@@ -2,13 +2,13 @@ import { CardBody, CardContainer, CardItem } from "../../ui/3Dcard";
 import PropTypes from "prop-types";
 export function ProjectCard({ projects, openGithub, openLive }) {
   return (
-    <div className="flex justify-center items-center flex-wrap gap-10 px-4">
+    <div className="flex justify-center items-center flex-wrap gap-10 px-4 md:font-[cursive] font-['Times_New_Roman'] bg-white-50">
       {projects?.map((project) => (
         <CardContainer key={project.id} className="inter-var">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto 2xl:w-[21rem] sm:w-[20rem] h-auto rounded-xl p-6 border ">
             <CardItem
               translateZ="50"
-              className="text-3xl font-bold text-neutral-600 dark:text-white"
+              className="text-2xl font-bold text-neutral-600 dark:text-white"
             >
               {project.title}
             </CardItem>
@@ -21,7 +21,7 @@ export function ProjectCard({ projects, openGithub, openLive }) {
                 alt="thumbnail"
               />
             </CardItem>
-            <div className="flex justify-between items-center gap-2 pt-6">
+            <div className="flex justify-between items-center gap-2 pt-6 ">
               <h1 className="text-lg font-bold">Tech Stack:</h1>
               <div className="flex gap-2">
               {project?.tech?.map((tech) => (
