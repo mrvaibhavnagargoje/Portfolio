@@ -75,51 +75,57 @@ const ProfileSection = () => {
   }
 
   return (
-    <section id="profile" className="md:font-[cursive] font-['Times_New_Roman'] mt-[-1px] sm:mt-20 md:mt-10 lg:mt-[-55px]">
-  <div className="section__pic-container">
-    <img
-      src={vaibhavPic}
-      alt="Vaibhav profile picture"
-      className="vaibhavPic"
-      loading="lazy"
-    />
-  </div>
-  <div className="section__text">
-    <p className="section__text__p1 text-slate-500 text-3xl">Hello, I'm</p>
-    <h1 className="title text-white text-5xl">Vaibhav Nagargoje</h1>
-    <p className="section__text__p2 text-slate-500 text-3xl mt-2">
-      Frontend Developer
-    </p>
-    <div className="btn-container mt-4 flex flex-wrap gap-4">
-      <button
-        className="text-white border border-white-500 px-5 py-2 font-bold rounded-3xl hover:text-black hover:bg-white transition duration-300"
-        onClick={handleResumeClick}
-      >
-        Download CV
-      </button>
-      <button
-        className="bg-white text-black border border-black px-5 py-2 font-bold rounded-3xl hover:bg-black hover:text-white transition duration-300"
-        onClick={handleContactClick}
-      >
-        <a href="#footer">Contact Info</a>
-      </button>
-    </div>
-
-    <div id="socials-container" className="flex space-x-4 mt-6">
-      <FaLinkedin
-        onClick={handleLinkedInClick}
-        className="text-white object-cover w-16 h-10 cursor-pointer"
-      />
-      <FaGithub
-        onClick={handleGithubClick}
-        className="text-white object-cover w-16 h-10 cursor-pointer"
-      />
-    </div>
-  </div>
-</section>
-
+    <section
+      id="profile"
+      className="md:font-[cursive] font-['Times_New_Roman'] mt-[71px] sm:mt-20 md:mt-10 lg:mt-[-55px]"
+    >
+      <div className="section__pic-container">
+        <img
+          src={vaibhavPic}
+          alt="Vaibhav profile picture"
+          className="vaibhavPic"
+          loading="lazy"
+        />
+      </div>
+      <div className="section__text">
+        <p className="section__text__p1 text-slate-500 text-xl sm:text-2xl md:text-3xl">
+          Hello, I'm
+        </p>
+        <h1 className="title text-white text-3xl sm:text-4xl md:text-5xl">
+          Vaibhav Nagargoje
+        </h1>
+        <p className="section__text__p2 text-slate-500 text-xl sm:text-2xl md:text-3xl mt-2">
+          Frontend Developer
+        </p>
+        <div className="btn-container mt-4 flex flex-wrap gap-4">
+          <button
+            className="text-white border border-white-500 px-4 sm:px-5 py-2 text-sm sm:text-base font-bold rounded-3xl hover:text-black hover:bg-white transition duration-300"
+            onClick={handleResumeClick}
+          >
+            Download CV
+          </button>
+          <button
+            className="bg-white text-black border border-black px-4 sm:px-5 py-2 text-sm sm:text-base font-bold rounded-3xl transition duration-300"
+            onClick={handleContactClick}
+          >
+            <a href="#footer">Contact Info</a>
+          </button>
+        </div>
   
+        <div id="socials-container" className="flex space-x-4 mt-6">
+          <FaLinkedin
+            onClick={handleLinkedInClick}
+            className="text-white object-cover w-10 sm:w-14 h-8 sm:h-10 cursor-pointer"
+          />
+          <FaGithub
+            onClick={handleGithubClick}
+            className="text-white object-cover w-10 sm:w-14 h-8 sm:h-10 cursor-pointer"
+          />
+        </div>
+      </div>
+    </section>
   )
+  
 }
 
 export default ProfileSection
