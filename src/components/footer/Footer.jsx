@@ -10,7 +10,7 @@ const SocialIcons = () => {
   };
 
   const handleGithubClick = () => {
-    window.location.href = "https://github.com/mrprocoderr";
+    window.location.href = "https://github.com/mrvaibhavnagargoje";
   };
 
   const handleInstagramClick = () => {

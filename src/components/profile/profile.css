@@ -25,7 +25,7 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
-    
+    position: relative;
   }
   
   .section__pic-container img {
@@ -68,13 +68,16 @@ section {
   }
   
   .vaibhavPic {
-    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.6s ease;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.5s ease-out;
   }
   
   .vaibhavPic:hover {
-    transform: translateX(5%) scale(1.05);
+    transform: scale(1.05);
     opacity: 0.9;
   }
+  
   
   
   /* BUTTONS */
@@ -124,3 +127,68 @@ section {
     gap: 1rem;
   }
   
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .animate-fade-in:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .animate-fade-in:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .animate-fade-in:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  
+  @media (hover: hover) {
+    .hover\:scale-105:hover {
+      transform: scale(1.05);
+    }
+  
+    .hover\:scale-110:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .dark .text-primary {
+    color: rgb(var(--primary));
+  }
+  
+  .dark .text-muted-foreground {
+    color: rgb(var(--muted-foreground));
+  }
+   */
