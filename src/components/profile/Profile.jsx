@@ -55,7 +55,8 @@ import "./profile.css"
 import vaibhavPic from "../../assets/vaibhavpng.jpg"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa6"
-import pdf from "../../assets/FSD_RESUME_VaibhavNagargoje.pdf"
+// import pdf from "../../assets/FSD_RESUME_VaibhavNagargoje.pdf"
+import pdf from "../../assets/Mr-VaibhavNagargoje-resume.pdf"
 
 const ProfileSection = () => {
   const handleResumeClick = () => {
